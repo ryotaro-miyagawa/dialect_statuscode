@@ -22,7 +22,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'dialect_statuscode
+
+DialectStatuscode::Kansai.not_found # "あらへんやないかい"
+DialectStatuscode::Tokyo.not_found # "見つかりませんでした。"
+```
+
+あとは、それぞれに `bad_gateway` と `internal_server_error` が実装されています。
 
 ## Development
 
