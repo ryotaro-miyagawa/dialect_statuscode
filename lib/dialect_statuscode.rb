@@ -2,29 +2,29 @@ require "dialect_statuscode/version"
 
 module DialectStatuscode
   module Kansai
-    def self.404
+    def self.not_found
       "あらへんやないかい"
     end
 
-    def self.502
+    def self.bad_gateway
       "そこちゃうねん"
     end
 
-    def self.500
+    def self.internal_server_error
       "すまん、やらかした。。"
     end
   end
 
   module Tokyo
-    def self.404
+    def self.not_found
       "見つかりませんでした。"
     end
 
-    def self.502
+    def self.bad_gateway
       "間違ったところにリクエストが送信されてしまったようです。"
     end
 
-    def self.500
+    def self.internal_server_error
       "一時的なエラーです。少し時間を置いてからアクセスしてください。"
     end
   end
